@@ -1,0 +1,1 @@
+#abrir script: cntrl + shift + n
