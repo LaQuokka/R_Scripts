@@ -83,3 +83,11 @@ interceptB2 = 3638.24531
 func2 <- function(totwrk, educ, age){
   interceptB2 + educB2*educ + ageB2*age + totwrkB2*totwrk
 }
+
+# temos um problema nessa regressão: estamos variando em 1min de sono/trabalho
+# e 1 ano de educação
+
+# Fazendo o logaritmo neperiano da regressão
+library("SciViews")
+dados$lnsleep <- dados %>% mutate(lnsleep = ln(sleep))
+view(dados)
