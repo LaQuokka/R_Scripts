@@ -17,4 +17,4 @@ ggscatter(my_data, x = "mpg", y = "wt",
 library('readxl')
 dados_fri = read_excel('G:\\Meu Drive\\Projetos Atuais\\IC\\VS\\data_for_corr.xlsx')
 dados_fri
-ggscatter(dados_fri, x = 'resultado_primario', y = 'FRI')
+ggscatter(dados_fri, x = 'FRI', y = 'resultado_primario')
