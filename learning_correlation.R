@@ -13,8 +13,14 @@ my_data
 ggscatter(my_data, x = "mpg", y = "wt", 
           xlab = "Miles/(US) gallon", ylab = "Weight (1000 lbs)")
 
-# tentando importar meus próprios dados
+##3 tentando importar meus próprios dados
 library('readxl')
+
+#importando dados
 dados_fri = read_excel('G:\\Meu Drive\\Projetos Atuais\\IC\\VS\\data_for_corr.xlsx')
 dados_fri
-ggscatter(dados_fri, x = 'FRI', y = 'resultado_primario')
+#pegando nome das colunas do dataset
+names = colnames(dados_fri) 
+anos = dados_fri[[1]] # selecionando os anos do dataset como uma lista [[]]
+ggscatter(dados_fri, x = '...1', y = 'FRI', title = 'resultado primario')
+
