@@ -91,3 +91,6 @@ func2 <- function(totwrk, educ, age){
 library("SciViews")
 dados$lnsleep <- dados %>% mutate(lnsleep = ln(sleep))
 view(dados)
+
+#obs (05/05): a função que pega os coeficientes da regressão é coef.
+# Ex.: coef(reg1)[1] (nos dá B0), coef(reg1)[2] (nos dá B1)
